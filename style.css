@@ -154,12 +154,7 @@ section {
 }
 
 /* ---- Pic-Profile ---- */
-.section__prof-pic-container {
-  display: flex;
-  height: 600px;
-  width: 600px;
-  margin: auto 0;
-}
+
 .section__pic-container {
   display: flex;
   height: 500px;
