@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------ Css ------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ------ RemixIcon ------- -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- ------ BoxIcon ------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Andrew Basalla Website </title>
+</head>
+<body>
+    <!-- ---------------- Header --------------- -->
+    <header>
+        <a href="#" class="logo">Andrew Basalla<span></span></a>
+
+        <div class="nav-container">
+            <ul class="navbar">
+                <li class="nav-link active-link"><a href="#profile">Home</a></li>
+                <!-- <li class="nav-link"><a href="#about">About Me</a></li> -->
+                <li class="nav-link"><a href="#workexperience">Work Experience</a></li>
+                <li class="nav-link"><a href="#codingexperience">Coding Experience</a></li>
+                <li class="nav-link"><a href="#education">Education</a></li>
+                <li class="nav-link"><a href="#publications">Publications</a></li>
+                <li class="nav-link"><a href="#contact">Contact Me</a></li>
+            </ul>
+            
+            <div class="nav-button">
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                <a href="#"><i class="bx bx-menu" id="menu-icon"></i></a>
+            </div>
+        </div>
+        <div class="underline"></div>
+
+    </header>
+    <!-- ---------------- Profile Section --------------- -->
+    <section id="profile">
+        <div class="section__prof-pic-container">
+            <img src="assets/first_pic.png" class="profile-pic">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Andrew Basalla</h1>
+            <p class="section__text__p2">Pharmaceutical Scientist. </br> Coding Enthusiast.</p>
+            <!-- <p class="section__text__p3">With knowledge in web development and design,</br>I offer the best projects resulting in quality work.</p> -->
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('/assets/Basalla_Andrew_Resume_2023-5.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+
+            <div id="socials-container">
+                <a href="https://github.com/BasallaAndrew" target="_blank"><i class="ri-github-fill social-icon"></i></a>
+                <a href="https://www.linkedin.com/in/andrew-basalla/" target="_blank"><i class="ri-linkedin-box-fill social-icon"></i></a>
+                <a href="https://www.youtube.com/@AndrewBasalla" target="_blank"><i class="ri-youtube-fill social-icon"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ---------------- Work experience Section --------------- -->
+    <section class="skills" id="workexperience">
+        <p class="section__text__p1"> Learn about my </p>
+        <h1 class="title">Work Experience</h1>
+
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                    </br></br>
+                        Currently I am employed at Molecular Templates in Austin, Texas. At Molecular Templates, I am a lead formulation development and mass spectrometry scientist on the anlaytical team. I lead formulation development projects where I where
+                        I design and execute iterative statistical based (DOE) development projects for our lead candidates and perform all of the analytical testing for these studies. Additionally, I am the lead mass spec scientist, running analysis and developing
+                        assays and also developing methods for machine learning with regards to mass spec. 
+                    </br>
+                    </br>
+                    </br>
+                        Perviously, I worked at KBI Biopharma in Louisville, Colorado as a lead formulation scientist. At KBI, I started on the biophysical sciences team where I learned and became fluent in all biophysical methods including AUC,
+                        CD, DSC, FTIR, fluorescence, DLS, and DSF. After being on the biophysical team, I tranisitioned to the biochemical team where I learned and became fluent using HPLC, UPLCs, their associated methods, and was KBI's subject matter expert in light scattering (MALS and DLS).
+                        Additionally, I became fluent in mass spectrometry having used Q-TOFs, TOFs, Orbitraps, and LTQs and was the mass spec lead on multiple projects. Through this work, I was leading formulation development projects, where
+                        I would design and execute iterative statistical based (DOE) development projects for many pharmaceutical modalities. 
+                    </br></br>
+                        In addition to my wet-lab scientist role, I also lead data science efforts at at KBI. Using my fluency in Python and Dash, I developed multiple python applications
+                        which could reduce analysis time for scientists or fix problems. Notably I designed a tool which could correct absorbance measurements for light scattering which was published in the Journal of Pharmaceutical Sciences in 2023. 
+                    </p>
+                </div>
+            </div>
+            <div class="section__pic-container">
+                <img src="/assets/work_exp.png" alt="" class="about-pic">
+            </div>
+        </div>
+        <img src="/assets/arrow.png" class="arrow">
+    </section>
+    <!-- ---------------- Coding experience Section --------------- -->
+    <section id="codingexperience">
+        <p class="section__text__p1"> Learn about my</p>
+        <h1 class="title">Coding Experience</h1>
+        
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="/assets/Coding_exp.png" alt="" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                    </br></br>
+                        My programming language of choice is Python and overall I am very fluent in it. I started coding all the way back in my undergraduate coursework and started using Python during my time at KBI and in my
+                        Masters thesis work. During this work, I quickly learned the basics of using Jupyter notebooks, importing data, using pandas for dataframe management, and plotly for data
+                        visualization. From working with First Principles Biopharma, one of the companies hosting my thesis work, I learned Git and Github for version control,
+                        collaborations, and working on a programming team. During that experience, I also learned how to use Plotly's Dash and Docker for generating and deploying web based applications
+                        using Python and I implemented my thesis work on their website. 
+                    </br></br>
+                        At my current job, I frequently use python for data analysis/visualization, however I also use it for machine learning in mass spectrometry and formulation development purposes. In this work, I take data that 
+                        I have collected to generate a dataset and train the machine learning model. For example, we collect melting temperature data (Tm) and relate it to the amino acid sequence to see if we could predict
+                        what motifs in the amino acid sequence are critical for protein stability.
+                    </br></br>
+                        At KBI, I used my Python skills to develop multiple applications which could remove critical bottle necks in analytical workflows. One application I made would decipher and deconvolute large proteomic mass spectrometry datasets
+                        to remove the time that scientists would spend exporting data by hand. 
+                    </br></br>
+                        Past that, I have experience using other programming languages including, HTML, JavaScript, and CSS (which this website is made from), R, SQL, VBA, and matlab. I also have experience using bash scripting and Linux operating systems.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <img src="/assets/arrow.png" class="arrow">
+    </section>
+    <!-- ---------------- Education Section --------------- -->
+    <section id="education">
+        <p class="section__text__p1"> Learn about my</p>
+        <h1 class="title">Education</h1>
+
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                    </br></br>
+                        I earned my Master of Science degree in Pharmaceutical Science from the University of Colorado Anschutz School of Pharmacy. While I was there I did a research thesis titled "A Novel Approach for the Correction of Absorbance Measurements for Light Scattering"
+                        and the recording of my thesis defense can be found on YouTube. I partnered with KBI Biopharma and First Principles Biopharma for this project where I also published this work in the Journal of Pharmaceutical Sciences
+                        where that publication is open source and can be read here. Through the coursework, I took classes relating to mass spectrometry, machine learning, drug delivery, and protein formulation, just to name a few. 
+                    </br></br>
+                        Before this, I earned my Bachelor of Science degree in Chemical and Biological Engineering with a minor in Biomedical Engineering from the University of Colorado Boulder School of Engineering. While I was there I worked in a reasearch lab under Dr. Gin and Dr. Noble where I worked to create new lyotropic 
+                        liquid crystalline membranes for desalnation of water and iron flow battery purposes. A couple of those projects that I worked on were also published, see my publications section below. Through this coursework, I took 
+                        courses related to biomaterials, drug kinetics, drug discovery, and computational engineering. 
+                    </p>
+                </div>
+            </div>
+            <div class="section__pic-container">
+                <img src="/assets/Education.png" alt="" class="about-pic">
+            </div>
+        </div>
+        <img src="/assets/arrow.png" class="arrow">
+    </section> 
+    <!-- ---------------- Publications Section --------------- -->
+    <section id="publications">
+        <p class="section__text__p1"> Learn about my</p>
+        <h1 class="title">Publications and Certifications</h1>
+
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                    </br></br>
+                        Here are some of the publications that I have been fortunate to work on:
+                        </br></br>
+                        Basalla, A.J., Kendrick, B.S. 2023, Correcting Ultraviolet-Visible Spectra for Baseline Artifacts. Journal of Pharmaceutical Sciences.
+                        <br></br>
+                        McGrath, M. J., Hardy, S. H., Basalla, A. J., Dwulet, G. E., Manubay, B. C., Malecha, J. J., Shi, Z., Funke, H. H., Gin, D. L., & Noble, R. D. 2019 Polymerization of Counteranions in the Cationic Nanopores of a Cross-linked Lyotropic Liquid Crystal Network to Modify Ion Transport Properties. ACS Materials Letters, 1(4), 452–458.
+                        <br></br>
+                        Dwulet, G. E., Dischinger, S. M., McGrath, M. J., Basalla, A. J., Malecha, J. J., Noble, R. D., & Gin, D. L. 2019. Breathable, Polydopamine-Coated Nanoporous Membranes That Selectively Reject Nerve and Blister Agent Simulant Vapors. Industrial & Engineering Chemistry Research, 58(47), 21890–21893.
+                        
+
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="section__pic-container">
+                <img src="/assets/p2.png" alt="" class="about-pic">
+            </div> -->
+        </div>
+        <img src="/assets/arrow.png" class="arrow">
+    </section> 
+    <!-- ---------------- Contact Section --------------- -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <form action="index.html" method="post" class="contact-form">
+            <div class="input-wrap">
+                <input class="contact-input" autocomplete="off" name="First Name" type="text" required/>
+                <label >First Name</label>
+                <i class="fa-solid fa-address-card form-icon"></i>
+            </div>
+
+        <form action="index.html" method="post" class="contact-form">
+            <div class="input-wrap">
+                <input class="contact-input" autocomplete="off" name="Last Name" type="text" required/>
+                <label >Last Name</label>
+                <i class="fa-solid fa-address-card form-icon"></i>
+            </div> 
+
+            <div class="input-wrap w-100">
+                <input type="email" autocomplete="off" name="Email" class="contact-input">
+                <label>Email</label>
+                <i class="fa-solid fa-envelope form-icon"></i>
+            </div>
+            
+            <div class="input-wrap textarea w-100">
+                <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
+                <label>Message</label>
+                <i class="fa-solid fa-inbox form-icon"></i>
+            </div>
+            <button class="btn btn-color-1">Send Message</button>
+
+        </form>
+    </section>
+    <!-- ---------------- CopyRight --------------- -->
+    <p class="copyright">&#169; AndrewBasalla. All right reserved</p>
+    <!-- ---------------- Scroll Up --------------- -->
+    <a href="#profile" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+    
+    <!-- ------ CDN FontAwesome ------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <!-- ------ JavaScript ------- -->
+    <script src="script.js"></script>
+</body>
+</html>
