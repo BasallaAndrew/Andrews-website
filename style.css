@@ -598,8 +598,11 @@ textarea.contact-input ~ .form-icon {
 
 @media screen and (max-width: 540px) {
   .section__pic-container {
-    height: 60vw;
+    width: 0px;
+    height: 0px;
+    margin: 0 auto 2rem;
   }
+  
   .contact-form {
     display: block;
   }
