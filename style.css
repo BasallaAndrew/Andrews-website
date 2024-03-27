@@ -596,7 +596,7 @@ textarea.contact-input ~ .form-icon {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 480px) {
   .section__pic-container {
     height: 60vw;
   }
@@ -611,7 +611,7 @@ textarea.contact-input ~ .form-icon {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 320px) {
   .row-img img {
     height: 40%;
   }
