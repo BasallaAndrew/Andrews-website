@@ -134,6 +134,7 @@ header {
 header.sticky {
   padding: 9px 6%;
   background: transparent;
+  -webkit-backdrop-filter: blur(60px);
   backdrop-filter: blur(60px);
   box-shadow: 0 0 10px var(--shadow-color);
 }
