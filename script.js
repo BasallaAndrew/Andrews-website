@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+window.onload = function() {
+    document.getElementById('input_field').value = '';
+    document.getElementById('input_field2').value = '';
+    document.getElementById('input_field3').value = '';
+    document.getElementById('input_field4').value = '';
+    }
+
 // Adding Scroll Top
 function scrollUp () {
     const scrollUp = document.getElementById("scroll-up");
