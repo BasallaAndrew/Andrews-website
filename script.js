@@ -1,4 +1,25 @@
-// Adding sticky navbar 
+// Footer year
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Scroll-reveal animations
+const revealEls = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window && revealEls.length) {
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    revealEls.forEach((el) => revealObserver.observe(el));
+} else {
+    // Fallback: no observer support -> show everything
+    revealEls.forEach((el) => el.classList.add("visible"));
+}
+
+// Adding sticky navbar
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function() {

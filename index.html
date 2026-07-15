@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrew Basalla — Pharmaceutical & Machine Learning Scientist. PhD researcher at UT Austin building physics-informed machine learning for biologics characterization.">
     <!-- ------ Css ------- -->
     <link rel="stylesheet" href="style.css">
     <!-- ------ RemixIcon ------- -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- ------ BoxIcon ------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <title>Andrew Basalla Website </title>
+    <title>Andrew Basalla — Pharmaceutical & ML Scientist</title>
 </head>
 <body>
+    <!-- ---------------- Animated Background --------------- -->
+    <div class="bg-aurora" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <div class="grid-overlay"></div>
+    </div>
+
     <!-- ---------------- Header --------------- -->
     <header>
-        <a href="#" class="logo">Andrew Basalla<span></span></a>
+        <a href="#profile" class="logo">Andrew Basalla<span>.</span></a>
         <div class="nav-container">
             <ul class="navbar">
                 <li class="nav-link active-link"><a href="#profile">Home</a></li>
-                <li class="nav-link"><a href="#education">Education</a></li>
-                <li class="nav-link"><a href="#workexperience">Work Experience</a></li>
-                <li class="nav-link"><a href="#codingexperience">Coding Experience</a></li>
+                <li class="nav-link"><a href="#education">About</a></li>
+                <li class="nav-link"><a href="#experience">Experience</a></li>
+                <li class="nav-link"><a href="#research">Research</a></li>
                 <li class="nav-link"><a href="#publications">Publications</a></li>
-                <li class="nav-link"><a href="#contact">Contact Me</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-button">
                 <i class="bx bx-moon change-theme" id="theme-button"></i>
@@ -31,190 +40,396 @@
         </div>
         <div class="underline"></div>
     </header>
+
     <!-- ---------------- Profile Section --------------- -->
     <section id="profile">
-        <div class="section__prof-pic-container">
-            <img src="assets/first_pic.png" class="profile-pic">
+        <div class="section__prof-pic-container reveal">
+            <div class="pic-glow"></div>
+            <img src="assets/first_pic.png" class="profile-pic" alt="Andrew Basalla">
         </div>
-        <div class="section__text">
+        <div class="section__text reveal">
             <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Andrew Basalla</h1>
-            <p class="section__text__p2">Pharmaceutical and <br> Machine Learning Scientist.</p>
+            <h1 class="title gradient-text">Andrew Basalla</h1>
+            <p class="section__text__p2">Pharmaceutical &amp; Machine Learning Scientist</p>
+            <p class="hero-tagline">
+                PhD researcher at UT Austin building <strong>physics-informed machine learning</strong>
+                to accelerate the characterization of biologic drugs.
+            </p>
+            <div class="hero-badges">
+                <span class="pill"><i class="bx bxs-graduation"></i> PhD · UT Austin</span>
+                <span class="pill"><i class="bx bxs-flask"></i> Pharmaceutical Sciences</span>
+                <span class="pill"><i class="bx bx-brain"></i> Scientific ML</span>
+            </div>
             <div class="btn-container">
-                <!-- <button class="btn btn-color-2" onclick="window.open('Andrews-website/assets/assets/Basalla_Andrew_Resume_2024.pdf')">Download CV</button> -->
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Get in touch</button>
+                <button class="btn btn-color-2" onclick="location.href='./#research'">View research</button>
             </div>
             <div id="socials-container">
-                <a href="https://github.com/BasallaAndrew" target="_blank"><i class="ri-github-fill social-icon"></i></a>
-                <a href="https://www.linkedin.com/in/andrew-basalla/" target="_blank"><i class="ri-linkedin-box-fill social-icon"></i></a>
-                <!-- <a href="https://www.youtube.com/@AndrewBasalla" target="_blank"><i class="ri-youtube-fill social-icon"></i></a> -->
-                <a href="https://scholar.google.com/citations?user=WHSFleIAAAAJ&hl=en" target="_blank"><i class="ri-graduation-cap-fill social-icon"></i></a>
+                <a href="https://github.com/BasallaAndrew" target="_blank" aria-label="GitHub"><i class="ri-github-fill social-icon"></i></a>
+                <a href="https://www.linkedin.com/in/andrew-basalla/" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-box-fill social-icon"></i></a>
+                <a href="https://scholar.google.com/citations?user=WHSFleIAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="ri-graduation-cap-fill social-icon"></i></a>
             </div>
         </div>
     </section>
+
     <!-- ---------------- Education Section --------------- -->
     <section id="education">
-        <p class="section__text__p1"> Learn about my</p>
+        <p class="section__text__p1">Learn about my</p>
         <h1 class="title">Education</h1>
 
+        <div class="edu-timeline reveal">
+            <div class="edu-card">
+                <div class="edu-card__head">
+                    <span class="edu-degree">Ph.D. · Pharmaceutical Sciences</span>
+                    <span class="edu-date">Aug 2025 – Present</span>
+                </div>
+                <p class="edu-school">University of Texas at Austin</p>
+                <p class="edu-note">Williams &amp; Cui Labs — Molecular Pharmaceutics &amp; Drug Delivery</p>
+            </div>
+            <div class="edu-card">
+                <div class="edu-card__head">
+                    <span class="edu-degree">M.S. · Pharmaceutical Sciences</span>
+                    <span class="edu-date">Aug 2021 – May 2023</span>
+                </div>
+                <p class="edu-school">University of Colorado Anschutz</p>
+                <p class="edu-note">Thesis: A Novel Approach for the Correction of Absorbance Measurements for Light Scattering</p>
+            </div>
+            <div class="edu-card">
+                <div class="edu-card__head">
+                    <span class="edu-degree">B.S. · Chemical &amp; Biological Engineering</span>
+                    <span class="edu-date">Aug 2015 – May 2019</span>
+                </div>
+                <p class="edu-school">University of Colorado Boulder</p>
+                <p class="edu-note">Minor in Biomedical Engineering</p>
+            </div>
+        </div>
+
         <div class="section-container">
-            <div class="about-details-container">
+            <div class="about-details-container reveal">
                 <div class="text-container">
                     <p>
-                    </br></br>
-                        I am currently pursuing my PhD at the Unviersity of Texas at Austin School of Pharmacy in the devision of Molecular Pharmaceutics and Drug Delivery. I am studying under Dr. Bill Williams and Dr. Zhengrong Cui where my goal is to improve drug delivery of
-                        pharmaceutics by improving thin film lyophilization techniques using my background in formulation development, analytical techniques, and machine learning. 
-                    </br></br>
-                        I earned my Master of Science degree in Pharmaceutical Science from the University of Colorado Anschutz School of Pharmacy. While I was there I did a research thesis titled "A Novel Approach for the Correction of Absorbance Measurements for Light Scattering". 
-                        I partnered with KBI Biopharma and First Principles Biopharma for this project where I also published this work in the Journal of Pharmaceutical Sciences
-                        where that publication is open source and can be read online. Through the coursework, I took classes relating to mass spectrometry, machine learning, drug delivery, and protein formulation, just to name a few. 
-                    </br></br>
-                        Before this, I earned my Bachelor of Science degree in Chemical and Biological Engineering with a minor in Biomedical Engineering from the University of Colorado Boulder School of Engineering. While I was there I worked in a reasearch lab under Dr. Gin and Dr. Noble where I worked to create new lyotropic 
-                        liquid crystalline membranes for desalnation of water and iron flow battery purposes. A couple of those projects that I worked on were also published, see my publications section below. Through this coursework, I took 
-                        courses related to biomaterials, drug kinetics, drug discovery, and computational engineering. 
+                        I am currently pursuing my PhD at the University of Texas at Austin College of Pharmacy in the Division of
+                        Molecular Pharmaceutics and Drug Delivery. I study under Dr. Bill Williams and Dr. Zhengrong Cui, where my goal
+                        is to apply scientific machine learning to improve pharmaceutical biologics characterization — with a focus on
+                        rapid, physically-informed analysis of complex analytical datasets.
+                    </p>
+                    <p>
+                        I earned my M.S. in Pharmaceutical Sciences from the University of Colorado Anschutz, where my thesis,
+                        "A Novel Approach for the Correction of Absorbance Measurements for Light Scattering," was published in the
+                        Journal of Pharmaceutical Sciences in partnership with KBI Biopharma and First Principles Biopharma. My
+                        coursework spanned mass spectrometry, machine learning, drug delivery, and protein formulation.
+                    </p>
+                    <p>
+                        Before that, I earned my B.S. in Chemical and Biological Engineering with a Biomedical Engineering minor from
+                        the University of Colorado Boulder, working in the Gin and Noble labs on lyotropic liquid-crystalline membranes
+                        for water desalination and chemical-warfare-agent protection — work that led to two peer-reviewed publications.
                     </p>
                 </div>
             </div>
-            <div class="section__pic-container">
-                <img src="assets/school_exp_2.png" alt="" class="about-pic">
+            <div class="section__pic-container reveal">
+                <img src="assets/school_exp_2.png" alt="Education" class="about-pic">
             </div>
         </div>
-        <!-- <img src="/assets/arrow.png" class="arrow"> -->
-    </section> 
+    </section>
+
     <!-- ---------------- Work experience Section --------------- -->
-    <section class="skills" id="workexperience">
-        <p class="section__text__p1"> Learn about my </p>
+    <section class="skills" id="experience">
+        <p class="section__text__p1">Learn about my</p>
         <h1 class="title">Work Experience</h1>
 
         <div class="section-container">
-            <div class="about-details-container">
+            <div class="section__pic-container reveal">
+                <img src="assets/Work_exp_3.png" alt="Work experience" class="about-pic about-pic--left">
+            </div>
+            <div class="about-details-container reveal">
                 <div class="text-container">
                     <p>
-                    </br></br>
-                        Before starting my PhD, I was a researcher and lab manager at the Proteomics Mass Spectrometry Facility at the University of Austin Texas. In this role, I analyzed samples for researchers using high resolution mass spectrometers, and gained expertise of this analytical technique. 
-                        I effectively implemented DIA analysis into the core facility along with the data analysis pipeline. I also learned how to run, analyze, and decided which fragmentation techniques (ETD vs HCD vs EtHCD) would allow for PTM localization compared to sequence identification, etc.
-                        I also helped to implement a de novo sequencing data analysis pipeline for the core which is used by the top antibody scientists at UT Austin. Additionally, I utilized my coding and data science skills to develop and employ new technology to automate routine system suitability testing and data management to free up lab researcher's time. 
-                        Furthermore, I worked closely with bioinformatics researchers and I have implemented, fine-tuned, and utilized some of the latest machine learning models in bioinformatics for mass spectrometry. I have also given lectures about the basics of mass spectrometry to graduate students
-                        and other researchers. 
-
-                    <!-- </br></br>
-                        Previously I was employed at Molecular Templates in Austin, Texas. At Molecular Templates, I was a lead formulation development and mass spectrometry scientist on the anlaytical team. I led formulation development projects where I
-                        designed and executed iterative statistical based (DOE) development projects for our lead candidates and performed all of the analytical testing for these studies. Additionally, I was the lead mass spec scientist, running analysis and developing
-                        assays to determine PTMs of candidate therapeutics. -->
-                    </br>
-                    </br>
-                        Before that, I worked at KBI Biopharma in Louisville, Colorado as a lead formulation scientist. At KBI, I started on the biophysical sciences team where I learned and became fluent in all biophysical methods including AUC,
-                        CD, DSC, FTIR, fluorescence, DLS, and DSF. After being on the biophysical team, I tranisitioned to the biochemical team where I learned and became fluent using HPLC, UPLCs, their associated methods, and was KBI's subject matter expert in light scattering (MALS and DLS).
-                        Additionally, I became fluent in mass spectrometry having used Q-TOFs, TOFs, Orbitraps, and LTQs and was the mass spec lead on multiple projects. Through this work, I was leading formulation development projects, where
-                        I would design and execute iterative statistical based (DOE) development projects for many pharmaceutical modalities. 
-                    </br></br>
-                        In addition to my wet-lab scientist role, I also lead data science efforts at at KBI. Using my fluency in Python and Dash, I developed multiple python applications
-                        which could reduce analysis time for scientists or fix problems. Notably I designed a tool which could correct absorbance measurements for light scattering which was published in the Journal of Pharmaceutical Sciences in 2023. 
+                        Before starting my PhD, I was a Research Associate II and Lab Manager at the Proteomics Mass Spectrometry Core
+                        Facility at UT Austin. In this role I analyzed samples for researchers on high-resolution mass spectrometers,
+                        implemented DIA analysis and its data-analysis pipeline, and selected fragmentation strategies (ETD vs. HCD vs.
+                        EThcD) for PTM localization versus sequence identification. I also stood up a de novo sequencing pipeline used by
+                        UT Austin's antibody scientists, automated routine system-suitability testing and data management, fine-tuned
+                        state-of-the-art bioinformatics ML models, and lectured on the fundamentals of mass spectrometry.
+                    </p>
+                    <p>
+                        Before that, I was a Senior Research Associate in Analytical and Formulation Sciences at KBI Biopharma in
+                        Louisville, Colorado. I became fluent across the biophysical toolkit (AUC, CD, DSC, FTIR, fluorescence, DLS, DSF)
+                        and the biochemical toolkit (HPLC, UPLC), serving as KBI's subject-matter expert in light scattering (MALS and
+                        DLS) and a mass spectrometry lead across Q-TOF, TOF, Orbitrap, and LTQ platforms. I led statistically-designed
+                        (DOE) formulation-development projects across many modalities — AAVs, high-concentration mAbs, oligonucleotides,
+                        bacteriophages, and ADCs — advancing toward FDA approval.
+                    </p>
+                    <p>
+                        Alongside my wet-lab work, I led data-science efforts at KBI. Using Python and Dash, I built applications that cut
+                        analysis time and solved workflow bottlenecks — most notably a tool to correct absorbance measurements for light
+                        scattering, published in the Journal of Pharmaceutical Sciences in 2023.
                     </p>
                 </div>
             </div>
-            <div class="section__pic-container">
-                <img src="assets/Work_exp_3.png" alt="" class="about-pic">
-            </div>
         </div>
-        <!-- <img src="assets/arrow.png" class="arrow"> -->
     </section>
-    <!-- ---------------- Coding experience Section --------------- -->
-    <section id="codingexperience">
-        <p class="section__text__p1"> Learn about my</p>
-        <h1 class="title">Coding Experience</h1>
-        
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="assets/coding_exp_2.png" alt="" class="about-pic">
+
+    <!-- ---------------- Research / Coding Section --------------- -->
+    <section id="research">
+        <p class="section__text__p1">Learn about my</p>
+        <h1 class="title">Research &amp; Code</h1>
+
+        <!-- Featured project -->
+        <div class="feature-card reveal">
+            <div class="feature-card__badge">Featured Project</div>
+            <h2 class="feature-card__title gradient-text">SedNet</h2>
+            <p class="feature-card__sub">A physics-informed operator-learning framework for rapid SV-AUC analysis</p>
+            <p class="feature-card__body">
+                SedNet embeds sedimentation physics directly into a machine-learning framework to dramatically accelerate the analysis
+                of sedimentation velocity analytical ultracentrifugation (SV-AUC) data for biologic drug characterization. It extracts
+                interpretable size-distribution information in a fraction of the time of traditional fitting — published in the
+                <em>International Journal of Pharmaceutics</em> (2026).
+            </p>
+            <div class="feature-card__tags">
+                <span class="chip">Physics-Informed ML</span>
+                <span class="chip">Operator Learning</span>
+                <span class="chip">SV-AUC</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Inverse Modeling</span>
             </div>
-            <div class="about-details-container">
+        </div>
+
+        <div class="section-container">
+            <div class="section__pic-container reveal">
+                <img src="assets/coding_exp_2.png" alt="Coding experience" class="about-pic about-pic--left">
+            </div>
+            <div class="about-details-container reveal">
                 <div class="text-container">
                     <p>
-                    </br></br>
-                        My programming language of choice is Python and overall I am very fluent in it. I started coding back in my undergraduate coursework and started using Python during my time at KBI and in my
-                        Masters thesis work. During this work, I quickly learned the basics of using Jupyter notebooks, importing data, using pandas for dataframe management, and plotly for data
-                        visualization. From working with First Principles Biopharma, one of the companies hosting my thesis work, I learned Git and Github for version control,
-                        collaborations, and working on a programming team. During that experience, I also learned how to use Plotly's Dash and Docker for generating and deploying web based applications
-                        using Python and I implemented my thesis work on their website. 
-                    </br></br>
-                        More recently, I use python and pytorch for machine learning applications. At the proteomics core, I have implemented, fine-tuned, and utilized some of the latest machine learning models in bioinformatics 
-                        for mass spectrometry. For example, I have used AlphaPeptDeep for retention time and MS2 fragmentation prediction, DeepNovo for de novo peptide sequencing, and protein language models like progen2 for peptide to protein assembly.
-                        Additionally, I have trained convolutional neural networks for image prediction and random forest regression tree models both for formulation development which, during my Master's work, I also had given a lecture how to implement.
-                    </br></br>
-                        At KBI, I used my Python skills to develop multiple applications which could remove critical bottle necks in analytical workflows. One application I made would decipher and deconvolute large proteomic mass spectrometry datasets
-                        to remove the time that scientists would spend exporting data by hand. Additionally, I created tools for determining nucleic acid content in viral capids and of course the tool for correcting absorbance spectra for light scattering.
-                    </br></br>
-                        Past that, I have experience using other programming languages including, HTML, JavaScript, and CSS (which this website is made from), VBA, and matlab. I also have experience using bash scripting and Linux operating systems.
+                        Python is my language of choice. I picked it up during my Master's thesis and my time at KBI — Jupyter, pandas,
+                        and Plotly for analysis and visualization, then Git, Docker, and Plotly Dash for building and deploying
+                        web-based scientific applications, including deploying my thesis work to a production website.
+                    </p>
+                    <p>
+                        Today I work primarily in PyTorch on scientific machine learning: physics-informed neural networks, neural
+                        operators, and inverse modeling. At the proteomics core I implemented and fine-tuned leading bioinformatics
+                        models — AlphaPeptDeep for retention-time and MS2 prediction, DeepNovo for de novo peptide sequencing, and
+                        protein language models like ProGen2 for peptide-to-protein assembly — and I've trained CNNs and random-forest
+                        models for formulation development.
+                    </p>
+                    <p>
+                        At KBI I shipped Python applications that removed critical bottlenecks in analytical workflows: deciphering and
+                        deconvoluting large proteomic mass-spec datasets, quantifying nucleic-acid content in viral capsids, and the
+                        light-scattering correction tool that became a peer-reviewed publication. I also work in HTML, JavaScript, and
+                        CSS (this site included), plus VBA, MATLAB, and Bash on Linux.
                     </p>
                 </div>
             </div>
-            
         </div>
-        <!-- <img src="assets/arrow.png" class="arrow"> -->
+
+        <!-- Skills -->
+        <h2 class="subtitle reveal">Technical Skills</h2>
+        <div class="skills-grid reveal">
+            <div class="skill-group">
+                <h3><i class="bx bx-chip"></i> Scientific ML</h3>
+                <div class="skill-tags">
+                    <span class="chip">Physics-Informed Neural Networks</span>
+                    <span class="chip">Neural Operators</span>
+                    <span class="chip">DeepONets</span>
+                    <span class="chip">Operator Learning</span>
+                    <span class="chip">Inverse Modeling</span>
+                    <span class="chip">Surrogate Modeling</span>
+                    <span class="chip">Automatic Differentiation</span>
+                    <span class="chip">Uncertainty Quantification</span>
+                    <span class="chip">OOD Detection</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="bx bx-network-chart"></i> ML &amp; Scientific Computing</h3>
+                <div class="skill-tags">
+                    <span class="chip">MLPs</span>
+                    <span class="chip">Autoencoders</span>
+                    <span class="chip">Mixture Density Networks</span>
+                    <span class="chip">Normalizing Flows</span>
+                    <span class="chip">Ensemble Methods</span>
+                    <span class="chip">FEM / FDM</span>
+                    <span class="chip">Numerical ODE/PDE</span>
+                    <span class="chip">Signal Processing</span>
+                    <span class="chip">GPU Computing</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="bx bx-code-alt"></i> Programming &amp; Tools</h3>
+                <div class="skill-tags">
+                    <span class="chip">Python</span>
+                    <span class="chip">PyTorch</span>
+                    <span class="chip">TensorFlow</span>
+                    <span class="chip">scikit-learn</span>
+                    <span class="chip">NumPy</span>
+                    <span class="chip">SciPy</span>
+                    <span class="chip">pandas</span>
+                    <span class="chip">Plotly / Dash</span>
+                    <span class="chip">Git</span>
+                    <span class="chip">Docker</span>
+                    <span class="chip">Jupyter</span>
+                    <span class="chip">Bash</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="bx bxs-flask"></i> Biophysical &amp; Pharma</h3>
+                <div class="skill-tags">
+                    <span class="chip">Analytical Ultracentrifugation</span>
+                    <span class="chip">DLS / MALS</span>
+                    <span class="chip">Circular Dichroism</span>
+                    <span class="chip">Calorimetry</span>
+                    <span class="chip">Chromatography</span>
+                    <span class="chip">Mass Spectrometry</span>
+                    <span class="chip">Forced-Degradation</span>
+                    <span class="chip">Biologic Formulation</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="bx bx-desktop"></i> Scientific Software</h3>
+                <div class="skill-tags">
+                    <span class="chip">ASTRA</span>
+                    <span class="chip">SEDFIT</span>
+                    <span class="chip">GraphPad Prism</span>
+                    <span class="chip">JMP</span>
+                    <span class="chip">BioPharma Finder</span>
+                    <span class="chip">MassHunter</span>
+                    <span class="chip">Proteome Discoverer</span>
+                    <span class="chip">Empower</span>
+                    <span class="chip">ChemStation</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ---------------- Publications Section --------------- -->
     <section id="publications">
-        <p class="section__text__p1"> Learn about my</p>
-        <h1 class="title">Publications and Certifications</h1>
+        <p class="section__text__p1">Learn about my</p>
+        <h1 class="title">Publications &amp; Recognition</h1>
 
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="text-container">
-                    <p>
-                    </br></br>
-                        Here are the publications that I have been fortunate to work on:
-                        </br></br>
-                        </br></br>
-                        Basalla, A.J., Kendrick, B.S. 2023, Correcting Ultraviolet-Visible Spectra for Baseline Artifacts. Journal of Pharmaceutical Sciences, Volume 112, Issue 12, 3240 - 3247.
-                        <br></br>
-                        McGrath, M. J., Hardy, S. H., Basalla, A. J., Dwulet, G. E., Manubay, B. C., Malecha, J. J., Shi, Z., Funke, H. H., Gin, D. L., & Noble, R. D. 2019 Polymerization of Counteranions in the Cationic Nanopores of a Cross-linked Lyotropic Liquid Crystal Network to Modify Ion Transport Properties. ACS Materials Letters, 1(4), 452–458.
-                        <br></br>
-                        Dwulet, G. E., Dischinger, S. M., McGrath, M. J., Basalla, A. J., Malecha, J. J., Noble, R. D., & Gin, D. L. 2019. Breathable, Polydopamine-Coated Nanoporous Membranes That Selectively Reject Nerve and Blister Agent Simulant Vapors. Industrial & Engineering Chemistry Research, 58(47), 21890–21893.
-                        
+        <div class="pub-list reveal">
+            <article class="pub-card pub-card--featured">
+                <span class="pub-year">2026</span>
+                <div class="pub-body">
+                    <p class="pub-title">SedNet: A physics-informed operator-learning framework for rapid sedimentation velocity analytical ultracentrifugation analysis</p>
+                    <p class="pub-authors"><strong>Basalla, A.J.</strong>, Kumar, K., Cui, Z., Williams, R.O.</p>
+                    <p class="pub-venue">International Journal of Pharmaceutics · 2026; 698:126972</p>
+                </div>
+            </article>
+            <article class="pub-card">
+                <span class="pub-year">2023</span>
+                <div class="pub-body">
+                    <p class="pub-title">Correcting Ultraviolet–Visible Spectra for Baseline Artifacts</p>
+                    <p class="pub-authors"><strong>Basalla, A.J.</strong>, Kendrick, B.S.</p>
+                    <p class="pub-venue">Journal of Pharmaceutical Sciences · Vol. 112, Issue 12, 3240–3247</p>
+                </div>
+            </article>
+            <article class="pub-card">
+                <span class="pub-year">2019</span>
+                <div class="pub-body">
+                    <p class="pub-title">Polymerization of Counteranions in the Cationic Nanopores of a Cross-linked Lyotropic Liquid Crystal Network to Modify Ion Transport Properties</p>
+                    <p class="pub-authors">McGrath, M.J., Hardy, S.H., <strong>Basalla, A.J.</strong>, Dwulet, G.E., Manubay, B.C., Malecha, J.J., Shi, Z., Funke, H.H., Gin, D.L., Noble, R.D.</p>
+                    <p class="pub-venue">ACS Materials Letters · 1(4), 452–458</p>
+                </div>
+            </article>
+            <article class="pub-card">
+                <span class="pub-year">2019</span>
+                <div class="pub-body">
+                    <p class="pub-title">Breathable, Polydopamine-Coated Nanoporous Membranes That Selectively Reject Nerve and Blister Agent Simulant Vapors</p>
+                    <p class="pub-authors">Dwulet, G.E., Dischinger, S.M., McGrath, M.J., <strong>Basalla, A.J.</strong>, Malecha, J.J., Noble, R.D., Gin, D.L.</p>
+                    <p class="pub-venue">Industrial &amp; Engineering Chemistry Research · 58(47), 21890–21893</p>
+                </div>
+            </article>
+        </div>
 
-                    </p>
+        <div class="two-col">
+            <div class="reveal">
+                <h2 class="subtitle"><i class="bx bxs-trophy"></i> Honors &amp; Awards</h2>
+                <ul class="stack-list">
+                    <li><span class="stack-year">2026</span> AAPS Best Abstract Award</li>
+                    <li><span class="stack-year">2025</span> Graduate School Full Fellowship — UT Austin</li>
+                    <li><span class="stack-year">2023</span> Light Scattering University Graduate — Wyatt Technology</li>
+                    <li><span class="stack-year">2019</span> Undergraduate Student Researcher Award — North American Membrane Society</li>
+                    <li><span class="stack-year">2018</span> Discovery Learning Apprenticeship Award — CU Boulder</li>
+                    <li><span class="stack-year">—</span> Omega Chi Epsilon, National Honors Society for Chemical Engineering</li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <h2 class="subtitle"><i class="bx bxs-microphone"></i> Talks &amp; Posters</h2>
+                <ul class="stack-list">
+                    <li><span class="stack-year">2026</span> Using Scientific Machine Learning to Analyze SV-AUC Data — AAPS PharmSci 360, New Orleans</li>
+                    <li><span class="stack-year">2026</span> SedNet: Operator Learning for SV-AUC — Protein Stability Conference, Breckenridge</li>
+                    <li><span class="stack-year">2024</span> Introduction to Mass Spectrometry — UT Austin</li>
+                    <li><span class="stack-year">2023</span> Correcting Absorbance Measurements for Light Scattering — KBI Biopharma</li>
+                    <li><span class="stack-year">2023</span> Formulation Development of Pharmaceutical Bacteriophages — KBI Biopharma</li>
+                    <li><span class="stack-year">2022</span> Machine Learning &amp; Particle Morphology for Characterization — CU Anschutz</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h2 class="subtitle"><i class="bx bxs-group"></i> Leadership &amp; Service</h2>
+            <div class="lead-grid">
+                <div class="lead-card">
+                    <h3>Leader — The BioML Society</h3>
+                    <span class="lead-date">2026 – Present · UT Austin</span>
+                    <p>A student-led research group focused on research, education, and outreach in applying machine learning to the biological sciences.</p>
+                </div>
+                <div class="lead-card">
+                    <h3>Volunteer — Central Texas Food Bank</h3>
+                    <span class="lead-date">2023 – Present · Austin, TX</span>
+                    <p>Ongoing community volunteering supporting food access across Central Texas.</p>
+                </div>
+                <div class="lead-card">
+                    <h3>Volunteer — Red Rocks Church</h3>
+                    <span class="lead-date">2023 – Present</span>
+                    <p>Serving the local community through ongoing volunteering and outreach efforts.</p>
                 </div>
             </div>
-
         </div>
-        <!-- <img src="assets/arrow.png" class="arrow"> -->
-    </section> 
+    </section>
+
     <!-- ---------------- Contact Section --------------- -->
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="section-container">
-        <form action="https://formsubmit.co/andrew.basalla@cuanschutz.edu" method="POST" class="contact-form">
+        <form action="https://formsubmit.co/andrew.basalla@cuanschutz.edu" method="POST" class="contact-form reveal">
             <div class="input-wrap">
                 <input class="contact-input" autocomplete="off" name="First Name" type="text" id="input_field" required/>
-                <label >First Name</label>
+                <label>First Name</label>
                 <i class="fa-solid fa-address-card form-icon"></i>
             </div>
             <div class="input-wrap">
                 <input class="contact-input" autocomplete="off" name="Last Name" type="text" id="input_field2" required/>
-                <label >Last Name</label>
+                <label>Last Name</label>
                 <i class="fa-solid fa-address-card form-icon"></i>
-            </div> 
+            </div>
 
             <div class="input-wrap w-100">
                 <input type="email" autocomplete="off" name="Email" class="contact-input" id="input_field3">
                 <label>Email</label>
                 <i class="fa-solid fa-envelope form-icon"></i>
             </div>
-            
+
             <div class="input-wrap textarea w-100">
                 <textarea name="Message" autocomplete="off" class="contact-input" id="input_field4" required></textarea>
                 <label>Message</label>
                 <i class="fa-solid fa-inbox form-icon"></i>
             </div>
-            <button type= "submit" class="btn btn-color-1">Send Message</button>
-
+            <button type="submit" class="btn btn-color-1">Send Message</button>
         </form>
+        </div>
     </section>
-    <!-- ---------------- CopyRight --------------- -->
-    <p class="copyright">  </p>
+
+    <!-- ---------------- Footer --------------- -->
+    <footer class="site-footer">
+        <div class="footer-socials">
+            <a href="https://github.com/BasallaAndrew" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/andrew-basalla/" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://scholar.google.com/citations?user=WHSFleIAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="ri-graduation-cap-fill"></i></a>
+        </div>
+        <p class="copyright">© <span id="year"></span> Andrew Basalla · Austin, TX</p>
+    </footer>
+
     <!-- ---------------- Scroll Up --------------- -->
     <a href="#profile" class="scrollup" id="scroll-up">
         <i class="fa-solid fa-arrow-up scrollup__icon"></i>
